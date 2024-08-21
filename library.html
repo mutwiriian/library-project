@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <script src="library.js" defer></script>
+    <title>Library App</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="header-text">
+            <div class="library-icon">
+                <img src="icons/library-shelves.svg" alt="">
+            </div>
+
+            <p>Bro's Library</p>
+        </div>
+
+        <div class="new-book">
+            <button type="button" class="new-book-button">Add Book +</button>
+        </div>
+
+    </div>
+
+    <dialog class="form-dialog">
+        <div class="close">
+            <img src="icons/close.svg" alt="">
+        </div>
+        <form action="" method="dialog">
+            <ul>
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" placeholder="Enter book title">
+                </li>
+                
+                <li>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author" placeholder="Enter author's name">
+                </li>
+                <li>
+                    <label for="pages">Pages:</label>
+                    <input type="number" name="pages" id="pages">
+                </li>
+                <li>
+                    <label for="read">Read?</label>
+                    <select class="read" id="read">
+                        <option name="read" value="Yes">Yes</option>
+                        <option name="read" value="No">No</option>
+                    </select>
+                </li>
+            </ul>
+
+            <button type="submit" class="submit-button">Add Book</button>
+        </form>
+    </dialog>
+
+    <div class="books-container">
+        
+    </div>
+</body>
+</html>
