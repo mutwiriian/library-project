@@ -8,7 +8,7 @@ class Book {
         this.read = read
     }
     
-    info = function() {
+    info() {
     if (read === 'Yes') {
         return `${title} by ${author}, ${pages} pages, read`
     } else {
@@ -16,7 +16,7 @@ class Book {
         }
     }
 
-    toggleReadStatus = function() {
+    toggleReadStatus() {
         this.read = !this.read
     }
 }
