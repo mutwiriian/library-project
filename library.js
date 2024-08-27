@@ -1,11 +1,14 @@
 const library = [];
 
-function Book(title, author, pages, read){
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = function() {
+class Book {
+    constructor(title, author, pages, read){
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+    
+    info = function() {
     if (read === 'Yes') {
         return `${title} by ${author}, ${pages} pages, read`
     } else {
@@ -13,7 +16,7 @@ function Book(title, author, pages, read){
         }
     }
 
-    this.toggleReadStatus = function() {
+    toggleReadStatus = function() {
         this.read = !this.read
     }
 }
